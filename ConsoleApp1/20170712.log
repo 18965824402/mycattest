@@ -1,0 +1,338 @@
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.ExecutePacket(MyCatPacket packetToExecute)
+   在 Pomelo.Data.MyCat.NativeDriver.SendQuery(MyCatPacket queryPacket)
+   在 Pomelo.Data.MyCat.Driver.SendQuery(MyCatPacket p)
+   在 Pomelo.Data.MyCat.Statement.ExecuteNext()
+   在 Pomelo.Data.MyCat.PreparableStatement.ExecuteNext()
+   在 Pomelo.Data.MyCat.PreparableStatement.Execute()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Close()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Dispose()
+   在 Pomelo.Data.MyCat.Driver.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.Driver.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.CloseFully()
+   在 Pomelo.Data.MyCat.MyCatConnection.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose()
+   在 ConsoleApp1.Program.dddd(Object arg) 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 62
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Close()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Dispose()
+   在 Pomelo.Data.MyCat.Driver.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.Driver.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.CloseFully()
+   在 Pomelo.Data.MyCat.MyCatConnection.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose()
+   在 ConsoleApp1.Program.dddd(Object arg) 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 62
+
+
+2017/7/12 11:49:57Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered during command execution. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered attempting to read the resultset. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: 无法从传输连接中读取数据: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。。 ---> System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Pomelo.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   在 Pomelo.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.Common.BufferedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.ReadPacket()
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Close()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Dispose()
+   在 Pomelo.Data.MyCat.Driver.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.Driver.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.CloseFully()
+   在 Pomelo.Data.MyCat.MyCatConnection.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose()
+   在 ConsoleApp1.Program.dddd(Object arg) 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 62
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Close()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Dispose()
+   在 Pomelo.Data.MyCat.Driver.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.Driver.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.CloseFully()
+   在 Pomelo.Data.MyCat.MyCatConnection.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose()
+   在 ConsoleApp1.Program.dddd(Object arg) 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 62
+
+
+2017/7/12 11:49:57Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered during command execution. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered attempting to read the resultset. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: 无法从传输连接中读取数据: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。。 ---> System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Pomelo.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   在 Pomelo.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.Common.BufferedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.ReadPacket()
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Close()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Dispose()
+   在 Pomelo.Data.MyCat.Driver.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.Driver.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.CloseFully()
+   在 Pomelo.Data.MyCat.MyCatConnection.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose()
+   在 ConsoleApp1.Program.dddd(Object arg) 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 62
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Close()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Dispose()
+   在 Pomelo.Data.MyCat.Driver.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.Driver.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.CloseFully()
+   在 Pomelo.Data.MyCat.MyCatConnection.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose()
+   在 ConsoleApp1.Program.dddd(Object arg) 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 62
+
+
+2017/7/12 11:49:57Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered during command execution. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered attempting to read the resultset. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: 无法从传输连接中读取数据: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。。 ---> System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Pomelo.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   在 Pomelo.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.Common.BufferedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.ReadPacket()
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Close()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Dispose()
+   在 Pomelo.Data.MyCat.Driver.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.Driver.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.CloseFully()
+   在 Pomelo.Data.MyCat.MyCatConnection.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose()
+   在 ConsoleApp1.Program.dddd(Object arg) 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 62
+
+
+2017/7/12 11:49:57System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.ExecutePacket(MyCatPacket packetToExecute)
+   在 Pomelo.Data.MyCat.NativeDriver.SendQuery(MyCatPacket queryPacket)
+   在 Pomelo.Data.MyCat.Driver.SendQuery(MyCatPacket p)
+   在 Pomelo.Data.MyCat.Statement.ExecuteNext()
+   在 Pomelo.Data.MyCat.PreparableStatement.ExecuteNext()
+   在 Pomelo.Data.MyCat.PreparableStatement.Execute()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:49:57Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered during command execution. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered attempting to read the resultset. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: 无法从传输连接中读取数据: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。。 ---> System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Pomelo.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   在 Pomelo.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.Common.BufferedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.ReadPacket()
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:49:57Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered during command execution. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered attempting to read the resultset. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: 无法从传输连接中读取数据: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。。 ---> System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Pomelo.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   在 Pomelo.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.Common.BufferedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.ReadPacket()
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:49:57Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered during command execution. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered attempting to read the resultset. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: 无法从传输连接中读取数据: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。。 ---> System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Pomelo.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   在 Pomelo.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.Common.BufferedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.ReadPacket()
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:49:57Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered during command execution. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered attempting to read the resultset. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: 无法从传输连接中读取数据: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。。 ---> System.Net.Sockets.SocketException: 一个封锁操作被对 WSACancelBlockingCall 的调用中断。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Pomelo.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   在 Pomelo.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.Common.BufferedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.ReadPacket()
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
+
+
+2017/7/12 11:51:20System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Close()
+   在 Pomelo.Data.MyCat.MyCatDataReader.Dispose()
+   在 Pomelo.Data.MyCat.Driver.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.Driver.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.CloseFully()
+   在 Pomelo.Data.MyCat.MyCatConnection.Close()
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose(Boolean disposing)
+   在 Pomelo.Data.MyCat.MyCatConnection.Dispose()
+   在 ConsoleApp1.Program.dddd(Object arg) 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 62
+
+
+2017/7/12 11:51:20System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Pomelo.Data.MyCat.NativeDriver.ExecutePacket(MyCatPacket packetToExecute)
+   在 Pomelo.Data.MyCat.NativeDriver.SetDatabase(String dbName)
+   在 Pomelo.Data.MyCat.Driver.SetDatabase(String dbName)
+   在 Pomelo.Data.MyCat.MyCatConnection.ChangeDatabase(String databaseName)
+   在 Pomelo.Data.MyCat.MyCatConnection.Open()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 137
+
+
+2017/7/12 11:51:20Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered during command execution. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Fatal error encountered attempting to read the resultset. ---> Pomelo.Data.MyCat.MyCatException (0x80004005): Reading from the stream has failed. ---> System.IO.EndOfStreamException: 尝试读取超出流末尾的内容。
+   在 Pomelo.Data.MyCat.MyCatStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.LoadPacket()
+   在 Pomelo.Data.MyCat.MyCatStream.ReadPacket()
+   在 Pomelo.Data.MyCat.NativeDriver.GetResult(Int64& affectedRow, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.GetResult(Int32 statementId, Int64& affectedRows, Int64& insertedId)
+   在 Pomelo.Data.MyCat.Driver.NextResult(Int32 statementId, Boolean force)
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatDataReader.NextResult()
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteReader(CommandBehavior behavior)
+   在 Pomelo.Data.MyCat.MyCatCommand.ExecuteNonQuery()
+   在 ConsoleApp1.Program.dddd222() 位置 C:\Users\admin\Desktop\MyCATConnector-master\ConsoleApp1 - 副本\Program.cs:行号 141
