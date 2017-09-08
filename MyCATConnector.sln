@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26711.1
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{53F17B8B-F423-4DEB-A675-F46199D4CDA2}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCATConnector", "src\MyCATConnector\MyCATConnector.csproj", "{4503B3D4-B93A-4EED-86F1-558011E9F55A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1111111111", "ConsoleApp1 - 副本\ConsoleApp1111111111.csproj", "{E0A30CCD-1823-46A4-B65D-55F05C298BBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{2E0C7626-6AA1-42B1-AAC5-FC87B3BD968F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data_MySqlHelper", "ConsoleApp3\MySqlHelper\data_MySqlHelper.csproj", "{132EEBE7-BA41-4C08-BA24-7BCD702ABC34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{E0A30CCD-1823-46A4-B65D-55F05C298BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0A30CCD-1823-46A4-B65D-55F05C298BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0A30CCD-1823-46A4-B65D-55F05C298BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0C7626-6AA1-42B1-AAC5-FC87B3BD968F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0C7626-6AA1-42B1-AAC5-FC87B3BD968F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0C7626-6AA1-42B1-AAC5-FC87B3BD968F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0C7626-6AA1-42B1-AAC5-FC87B3BD968F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132EEBE7-BA41-4C08-BA24-7BCD702ABC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132EEBE7-BA41-4C08-BA24-7BCD702ABC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132EEBE7-BA41-4C08-BA24-7BCD702ABC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132EEBE7-BA41-4C08-BA24-7BCD702ABC34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
