@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Threading;
+using System.Data.Common;
 
 namespace ConsoleApp3
 {
@@ -22,7 +23,7 @@ namespace ConsoleApp3
 				Thread thread = new Thread(new System.Threading.ParameterizedThreadStart(dddd));
 
 				thread.Start(i);
-				Console.WriteLine(i);
+				//Console.WriteLine(i);
 			}
 
 
@@ -32,34 +33,37 @@ namespace ConsoleApp3
 		static void dddd(object arg)
 		{
 
+
+	
+
+
 			try
 			{
-				for (var i = 0; i < 1; i++)
+				for (var i = 0; i < 2; i++)
 				{
 
 					using (MySqlConnection conn = new MySqlConnection("server=localhost;port=8066;database=TESTDB;uid=root;pwd=123456;CharSet=utf8;pooling=true;Allow User Variables=True"))
 					{
-						//conn("INSERT INTO `test` (`name`) VALUES ( '" + System.DateTime.Now.ToString() + "')");
-
+					
 
 						conn.Open();
-
+						MySqlTransaction transaction = conn.BeginTransaction();
 						var cmd = new MySqlCommand("INSERT INTO `test` (`name`) VALUES ( '" + System.DateTime.Now.ToString() + "')", conn);
-
-						cmd.ExecuteNonQuery();
+					    cmd.Transaction = transaction;
+					    var t= 	cmd.ExecuteNonQuery();
+						Console.WriteLine(t);
+						transaction.Commit();
 
 					}
-					//if(conn==null)
-					//	 conn = new MyCatConnection("server=localhost;port=8066;database=TESTDB;uid=root;pwd=123456;CharSet=utf8;pooling=true;Connection Timeout=10");
+				
 
 
-
-					//	conn.Query("select  name  from `test`");
-
-
-					//dddd222();
-					//Console.WriteLine(i);
+				
+				
 				}
+
+
+			
 			}
 			catch (Exception ex)
 			{
